@@ -7,22 +7,22 @@ export default class FooterMain extends Component {
   render() {
     return (
       <Footer>
-        <FooterTab>
+        <FooterTab style={{backgroundColor: 'white'}}>
           <Button vertical>
-            <Icon name="home" size={25} />
-            <Text>Home</Text>
+            <Icon name="home" size={18} />
+            <Text style={{color: 'black'}}>Home</Text>
           </Button>
           <Button vertical>
-            <Icon name="send" size={25} />
-            <Text>Apply</Text>
+            <Icon name="send" size={18} />
+            <Text style={{color: 'black'}}>Apply</Text>
           </Button>
           <Button vertical>
-            <Icon name="user" size={25} />
-            <Text>Profile</Text>
+            <Icon name="user" size={18} />
+            <Text style={{color: 'black'}}>Profile</Text>
           </Button>
           <Button vertical>
-            <Icon name="sign-out" size={25} />
-            <Text>Logout</Text>
+            <Icon name="sign-out" size={18} />
+            <Text style={{color: 'black'}}>Logout</Text>
           </Button>
         </FooterTab>
       </Footer>

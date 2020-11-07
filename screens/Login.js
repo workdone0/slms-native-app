@@ -47,6 +47,7 @@ class Login extends React.Component {
     const response = await studentLogin(this.state.email, this.state.password);
     if (response.status === 200) {
       const responseSetToken = await setStudentToken(response.data.token);
+      console.log(response);
       this.props.setCurrentUser(response.data.user);
       this.props.navigation.navigate('Dashboard');
       this.setState({

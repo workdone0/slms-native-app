@@ -6,7 +6,6 @@ class SpinnerComponent extends React.Component {
   render() {
     return (
       <Container>
-        <Header />
         <Content contentContainerStyle={styles.content}>
           <Spinner color="red" />
         </Content>
