@@ -29,7 +29,7 @@ class Dashboard extends React.Component {
             return <Accord key={leave._id} leave={leave} />;
           })}
         </Content>
-        <FooterMain />
+        <FooterMain navigation={this.props.navigation} />
       </Container>
     );
   }

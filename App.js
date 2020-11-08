@@ -7,6 +7,8 @@ import {createStackNavigator} from '@react-navigation/stack';
 import Login from './screens/Login';
 import SplashScreen from './screens/SplashScreen';
 import Dashboard from './screens/Dashboard';
+import ApplyLeave from './screens/ApplyLeave';
+import Profile from './screens/Profile';
 
 const Stack = createStackNavigator();
 
@@ -22,6 +24,8 @@ class App extends React.Component {
           <Stack.Screen name="Login" component={Login} />
           <Stack.Screen name="Splash" component={SplashScreen} />
           <Stack.Screen name="Dashboard" component={Dashboard} />
+          <Stack.Screen name="Apply" component={ApplyLeave} />
+          <Stack.Screen name="Profile" component={ApplyLeave} />
         </Stack.Navigator>
       </NavigationContainer>
     );

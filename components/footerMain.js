@@ -8,15 +8,21 @@ export default class FooterMain extends Component {
     return (
       <Footer>
         <FooterTab style={{backgroundColor: 'white'}}>
-          <Button vertical>
+          <Button
+            vertical
+            onPress={() => this.props.navigation.navigate('Dashboard')}>
             <Icon name="home" size={18} />
             <Text style={{color: 'black'}}>Home</Text>
           </Button>
-          <Button vertical>
+          <Button
+            vertical
+            onPress={() => this.props.navigation.navigate('Apply')}>
             <Icon name="send" size={18} />
             <Text style={{color: 'black'}}>Apply</Text>
           </Button>
-          <Button vertical>
+          <Button
+            vertical
+            onPress={() => this.props.navigation.navigate('Profile')}>
             <Icon name="user" size={18} />
             <Text style={{color: 'black'}}>Profile</Text>
           </Button>
